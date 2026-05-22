@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>人生一串 · 文玩手串选品指南</title>
+<meta name="description" content="不懂文玩没关系，先找那串对的。告诉我们你的性格、场合和预算，人生一串帮你从菩提、沉香、绿松石、南红等材质里找出最适合你气质的那一串。" />
+<link rel="preconnect" href="https://api.fontshare.com" />
+<link href="https://api.fontshare.com/v2/css?f[]=tanker@400&f[]=author@400,500,600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231f3a36'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23d6b66a' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23d6b66a'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<!-- ============== HEADER ============== -->
+<header class="site-header" id="top">
+  <div class="container nav-row">
+    <a href="#top" class="brand" aria-label="人生一串 首页">
+      <svg class="brand-mark" width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <!-- Outer ring (玉环) -->
+        <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.2" fill="none" opacity="0.55"/>
+        <!-- Inner bi (璧) -->
+        <circle cx="20" cy="20" r="11" stroke="currentColor" stroke-width="1.4" fill="none"/>
+        <circle cx="20" cy="20" r="4" fill="currentColor" opacity="0.92"/>
+        <!-- Subtle dot accent -->
+        <circle cx="20" cy="20" r="1.2" fill="var(--paper)"/>
+        <!-- Two diagonal strokes for 言/玉 hint -->
+        <path d="M9 30 L31 10" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-zh">人生一串</span>
+        <span class="brand-en">WENWAN · 手串选品指南</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#logic">推荐逻辑</a>
+      <a href="#materials">材质图鉴</a>
+      <a href="#pairing">场景搭配</a>
+      <a href="#notes">内部说明</a>
+    </nav>
+    <a href="#assess" class="btn btn-primary btn-sm nav-cta">开始测评</a>
+    <button class="nav-menu-btn" id="navMenuBtn" aria-label="菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#logic">推荐逻辑</a>
+    <a href="#materials">材质图鉴</a>
+    <a href="#pairing">场景搭配</a>
+    <a href="#notes">内部说明</a>
+    <a href="#assess" class="btn btn-primary btn-sm">开始测评</a>
+  </div>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="jadeGlow" cx="50%" cy="50%" r="60%">
+          <stop offset="0%" stop-color="#3d5e54" stop-opacity="0.35"/>
+          <stop offset="60%" stop-color="#1f3a36" stop-opacity="0.08"/>
+          <stop offset="100%" stop-color="#1f3a36" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="paperGrain" width="120" height="120" patternUnits="userSpaceOnUse">
+          <circle cx="20" cy="30" r="0.6" fill="#1f3a36" opacity="0.05"/>
+          <circle cx="80" cy="60" r="0.4" fill="#7a5a2c" opacity="0.04"/>
+          <circle cx="50" cy="100" r="0.5" fill="#1f3a36" opacity="0.04"/>
+        </pattern>
+      </defs>
+      <rect width="1200" height="700" fill="url(#paperGrain)"/>
+      <circle cx="950" cy="220" r="280" fill="url(#jadeGlow)"/>
+      <circle cx="200" cy="500" r="220" fill="url(#jadeGlow)" opacity="0.6"/>
+    </svg>
+  </div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">个性化文玩手串选品工具</span>
+      <h1 class="hero-title">
+        人生一串 · <br/><em>文玩手串选品指南</em>
+      </h1>
+      <p class="hero-subtitle">串不对，气质全白费</p>
+      <p class="hero-slogan">不懂文玩没关系，先找那串对的</p>
+      <p class="hero-lede">
+        文玩的世界很大，但你不需要全懂。告诉我们你的性格、场合和预算，人生一串帮你从菩提、沉香、绿松石、南红……里找出最适合你气质的那一串——附材质科普、价格参考和避坑指南，让第一串就买对。
+      </p>
+      <div class="hero-actions">
+        <a href="#assess" class="btn btn-primary">先测一测 →</a>
+        <a href="#materials" class="btn btn-ghost">先了解看看</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>8</strong><span>主流材质百科</span></li>
+        <li><strong>6</strong><span>佩戴场景方案</span></li>
+        <li><strong>5</strong><span>预算梯度建议</span></li>
+      </ul>
+    </div>
+    <aside class="hero-card" aria-hidden="false">
+      <div class="report-card">
+        <div class="report-card-head">
+          <span class="report-label">示例推荐</span>
+          <span class="report-id">今日气质：温润松弛</span>
+        </div>
+        <h3>沉稳·温润型推荐</h3>
+        <p class="report-sub">通勤为主 · 预算 1k–3k · INFJ</p>
+        <div class="report-row">
+          <span class="dot dot-jade"></span>
+          <div>
+            <div class="r-name">和田青白玉手串 <em>主推</em></div>
+            <div class="r-meta">匹配度 92 · 单圈 / 小隔珠</div>
+          </div>
+        </div>
+        <div class="report-row">
+          <span class="dot dot-aloes"></span>
+          <div>
+            <div class="r-name">沉香小手串</div>
+            <div class="r-meta">匹配度 81 · 商务低调</div>
+          </div>
+        </div>
+        <div class="report-row">
+          <span class="dot dot-crystal"></span>
+          <div>
+            <div class="r-name">白水晶配珠</div>
+            <div class="r-meta">匹配度 74 · 隔珠搭配</div>
+          </div>
+        </div>
+        <div class="report-foot">
+          仅供审美与文化参考 · 不构成命理或鉴定结论
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============== RECOMMENDATION LOGIC ============== -->
+<section class="section section-logic" id="logic">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">底层逻辑</span>
+      <h2>为什么要提供这些信息？</h2>
+      <p class="section-lede">这里不是“算命式下结论”，而是把传统色彩象征、性格审美、兴趣爱好、预算和场景拆成几个推荐因子，帮助你更快缩小选择范围。</p>
+    </header>
+    <div class="logic-formula" aria-label="推荐公式">
+      <span>命理缺补</span>
+      <i>+</i>
+      <span>性格气质</span>
+      <i>+</i>
+      <span>兴趣审美</span>
+      <i>+</i>
+      <span>预算场景</span>
+      <i>=</i>
+      <strong>材质与单品方向</strong>
+    </div>
+
+    <div class="logic-flow">
+      <article class="logic-card">
+        <span class="logic-step">01</span>
+        <span class="logic-icon" aria-hidden="true">命</span>
+        <h3>先看缺补</h3>
+        <p>出生信息不是为了“下结论”，而是先判断五行气质偏向：例如金旺取火木、水旺取火土，用颜色和材质做第一层调和。</p>
+        <div class="logic-tags"><span>五行偏向</span><span>补益颜色</span><span>材质池</span></div>
+      </article>
+      <article class="logic-card">
+        <span class="logic-step">02</span>
+        <span class="logic-icon" aria-hidden="true">人</span>
+        <h3>再看人设</h3>
+        <p>MBTI 和气质偏好用于判断你适合“低调耐看”还是“明艳出片”，避免材质对了但佩戴语气不对。</p>
+        <div class="logic-tags"><span>内敛/外放</span><span>清冷/温暖</span><span>气质表达</span></div>
+      </article>
+      <article class="logic-card">
+        <span class="logic-step">03</span>
+        <span class="logic-icon" aria-hidden="true">好</span>
+        <h3>加入爱好</h3>
+        <p>茶咖、香道、书画、旅行、手作等爱好会影响材质氛围，比如香道更适合沉香，极简更适合白玉和水晶。</p>
+        <div class="logic-tags"><span>生活方式</span><span>审美场域</span><span>佩戴频率</span></div>
+      </article>
+      <article class="logic-card">
+        <span class="logic-step">04</span>
+        <span class="logic-icon" aria-hidden="true">场</span>
+        <h3>用场景收敛</h3>
+        <p>通勤、商务、礼赠、收藏对应完全不同的形制和价格逻辑。先确定使用场景，比盲目追热门更稳。</p>
+        <div class="logic-tags"><span>通勤</span><span>商务</span><span>礼赠</span><span>收藏</span></div>
+      </article>
+      <article class="logic-card">
+        <span class="logic-step">05</span>
+        <span class="logic-icon" aria-hidden="true">避</span>
+        <h3>最后避坑</h3>
+        <p>预算、香味敏感、怕压手、低维护、第一次入门等会修正推荐，降低高门槛或高风险品类的优先级。</p>
+        <div class="logic-tags"><span>预算</span><span>维护成本</span><span>证书风险</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ASSESSMENT ============== -->
+<section class="section section-assess" id="assess">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">测评 · Step-by-Step</span>
+      <h2>生成你的文玩手串推荐</h2>
+      <p class="section-lede">无需懂八字。不知道时辰也可以选择“粗略推荐”模式。</p>
+    </header>
+
+    <div class="assess-shell">
+      <div class="assess-progress" aria-hidden="true">
+        <div class="bar"><div class="bar-fill" id="barFill"></div></div>
+        <ol class="prog-steps">
+          <li class="active" data-step="1">出生定盘</li>
+          <li data-step="2">性格场景</li>
+          <li data-step="3">人设预算</li>
+        </ol>
+      </div>
+
+      <form id="assessForm" class="assess-form" novalidate>
+
+        <!-- Step 1 -->
+        <fieldset class="step active" data-step="1">
+          <legend>第一步 · 出生信息</legend>
+          <div class="grid-2">
+            <label class="field">
+              <span class="lbl">出生日期</span>
+              <input type="date" name="birthDate" />
+            </label>
+            <label class="field">
+              <span class="lbl">出生时间</span>
+              <input type="time" name="birthTime" />
+            </label>
+            <label class="field">
+              <span class="lbl">出生地点</span>
+              <input type="text" name="birthPlace" placeholder="例如:杭州 / 成都" />
+            </label>
+            <label class="field">
+              <span class="lbl">当前常住城市 <em>选填</em></span>
+              <input type="text" name="residentCity" placeholder="例如:上海" />
+            </label>
+            <label class="field full check-inline">
+              <input type="checkbox" name="unsureTime" />
+              <span>不确定出生时间,使用粗略推荐模式</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Step 2 -->
+        <fieldset class="step" data-step="2">
+          <legend>第二步 · 性格、审美、爱好与场景</legend>
+          <div class="stage-insight" id="birthInsight" aria-live="polite">
+            <div class="stage-kicker">第一阶段结果 · 生辰气质盘</div>
+            <div class="stage-grid">
+              <div>
+                <span>星座</span>
+                <strong id="astroSign">待生成</strong>
+              </div>
+              <div>
+                <span>年柱参考</span>
+                <strong id="birthPillar">待生成</strong>
+              </div>
+              <div>
+                <span>五行倾向</span>
+                <strong id="elementTrend">待生成</strong>
+              </div>
+              <div>
+                <span>场域气质</span>
+                <strong id="placeEnergy">待生成</strong>
+              </div>
+            </div>
+            <p id="birthInsightText">先填写出生日期和地点，人生一串会先给你一段传统文化参考版的气质解读，再进入性格与爱好校准。</p>
+          </div>
+          <div class="grid-2">
+            <label class="field">
+              <span class="lbl">MBTI 性格类型 <em>选填，不知道可跳过</em></span>
+              <select name="mbti">
+                <option value="unknown">不知道 / 先跳过</option>
+                <option>INTJ</option><option>INTP</option><option>ENTJ</option><option>ENTP</option>
+                <option>INFJ</option><option>INFP</option><option>ENFJ</option><option>ENFP</option>
+                <option>ISTJ</option><option>ISFJ</option><option>ESTJ</option><option>ESFJ</option>
+                <option>ISTP</option><option>ISFP</option><option>ESTP</option><option>ESFP</option>
+              </select>
+            </label>
+            <label class="field">
+              <span class="lbl">最希望传达的气质</span>
+              <select name="vibe">
+                <option value="">请选择</option>
+                <option>温润内敛</option>
+                <option>清冷禅意</option>
+                <option>明艳显白</option>
+                <option>沉稳贵气</option>
+                <option>灵动复古</option>
+                <option>个性叠戴</option>
+              </select>
+            </label>
+          </div>
+          <div class="field">
+            <span class="lbl">喜欢的关键词 <em>可多选</em></span>
+            <div class="chips" data-name="likeTags">
+              <button type="button" class="chip" data-v="温润">温润</button>
+              <button type="button" class="chip" data-v="清冷">清冷</button>
+              <button type="button" class="chip" data-v="明艳">明艳</button>
+              <button type="button" class="chip" data-v="沉稳">沉稳</button>
+              <button type="button" class="chip" data-v="贵气">贵气</button>
+              <button type="button" class="chip" data-v="禅意">禅意</button>
+              <button type="button" class="chip" data-v="灵动">灵动</button>
+              <button type="button" class="chip" data-v="复古">复古</button>
+              <button type="button" class="chip" data-v="低调">低调</button>
+              <button type="button" class="chip" data-v="显白">显白</button>
+            </div>
+          </div>
+          <div class="field">
+            <span class="lbl">爱好关键词 <em>可多选</em></span>
+            <div class="chips" data-name="hobbyTags">
+              <button type="button" class="chip" data-v="茶咖">茶咖</button>
+              <button type="button" class="chip" data-v="香道">香道</button>
+              <button type="button" class="chip" data-v="国风穿搭">国风穿搭</button>
+              <button type="button" class="chip" data-v="书画">书画</button>
+              <button type="button" class="chip" data-v="瑜伽冥想">瑜伽冥想</button>
+              <button type="button" class="chip" data-v="手作盘玩">手作盘玩</button>
+              <button type="button" class="chip" data-v="摄影旅行">摄影旅行</button>
+              <button type="button" class="chip" data-v="极简生活">极简生活</button>
+              <button type="button" class="chip" data-v="收藏研究">收藏研究</button>
+              <button type="button" class="chip" data-v="送礼审美">送礼审美</button>
+            </div>
+          </div>
+          <div class="field">
+            <span class="lbl">不喜欢的风格 <em>可多选</em></span>
+            <div class="chips chips-quiet" data-name="dislikeTags">
+              <button type="button" class="chip" data-v="太重">太重</button>
+              <button type="button" class="chip" data-v="太艳">太艳</button>
+              <button type="button" class="chip" data-v="太夸张">太夸张</button>
+              <button type="button" class="chip" data-v="太传统">太传统</button>
+              <button type="button" class="chip" data-v="太素">太素</button>
+            </div>
+          </div>
+          <div class="grid-2">
+            <label class="field">
+              <span class="lbl">主要佩戴场景</span>
+              <select name="scene">
+                <option value="">请选择</option>
+                <option>日常通勤</option>
+                <option>商务社交</option>
+                <option>送礼</option>
+                <option>收藏</option>
+                <option>仪式/转运</option>
+                <option>情侣/亲子</option>
+              </select>
+            </label>
+            <label class="field">
+              <span class="lbl">偏好品类</span>
+              <select name="category">
+                <option value="">请选择</option>
+                <option>手串</option>
+                <option>吊坠</option>
+                <option>手镯</option>
+                <option>戒指</option>
+                <option>摆件</option>
+                <option>车挂/把件</option>
+              </select>
+            </label>
+            <label class="field">
+              <span class="lbl">佩戴频率</span>
+              <select name="frequency">
+                <option value="">请选择</option>
+                <option>每天</option>
+                <option>偶尔</option>
+                <option>重要场合</option>
+                <option>收藏为主</option>
+              </select>
+            </label>
+            <label class="field">
+              <span class="lbl">最看重</span>
+              <select name="priority">
+                <option value="">请选择</option>
+                <option>颜值与穿搭</option>
+                <option>气质与寓意</option>
+                <option>性价比</option>
+                <option>收藏与保值</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Step 3 -->
+        <fieldset class="step" data-step="3">
+          <legend>第三步 · 人设画像与预算区间</legend>
+          <div class="stage-insight stage-persona" id="personaInsight" aria-live="polite">
+            <div class="stage-kicker">第二阶段结果 · 人设画像</div>
+            <h3 id="personaTitle">等待生成你的人设画像</h3>
+            <p id="personaText">选择 MBTI、兴趣爱好和佩戴场景后，这里会先生成你的佩戴人设，再进入预算选择。</p>
+            <div class="persona-tags" id="personaTags">
+              <span>审美关键词</span>
+              <span>生活方式</span>
+              <span>佩戴语气</span>
+            </div>
+          </div>
+          <div class="field">
+            <span class="lbl">预算区间</span>
+            <div class="radio-grid" data-name="budget">
+              <label class="radio-card"><input type="radio" name="budget" value="under300"/><span><strong>¥300 以下</strong><em>入门尝试</em></span></label>
+              <label class="radio-card"><input type="radio" name="budget" value="300-1000"/><span><strong>¥300–1,000</strong><em>日常佩戴</em></span></label>
+              <label class="radio-card"><input type="radio" name="budget" value="1000-3000" checked/><span><strong>¥1,000–3,000</strong><em>正经一件</em></span></label>
+              <label class="radio-card"><input type="radio" name="budget" value="3000-10000"/><span><strong>¥3,000–10,000</strong><em>进阶之选</em></span></label>
+              <label class="radio-card"><input type="radio" name="budget" value="10000+"/><span><strong>¥10,000 以上</strong><em>收藏级</em></span></label>
+            </div>
+          </div>
+          <p class="disclaimer-inline">
+            生成结果仅供审美、文化与内部交流参考，不构成命理承诺、鉴定结论或投资建议。
+          </p>
+        </fieldset>
+
+        <div class="form-nav">
+          <button type="button" class="btn btn-ghost" id="prevBtn" disabled>← 上一步</button>
+          <button type="button" class="btn btn-primary" id="nextBtn">下一步 →</button>
+          <button type="button" class="btn btn-primary" id="submitBtn" hidden>生成我的推荐</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============== RESULT ============== -->
+<section class="section section-result" id="result" hidden>
+  <div class="container">
+    <header class="section-head section-head-result">
+      <span class="eyebrow">你的专属推荐</span>
+      <h2 id="resultTitle">温润·沉稳型 选品方案</h2>
+      <p class="section-lede" id="resultSummary">基于你的出生信息倾向、MBTI 与场景偏好,我们为你优选 3 个材质方向。</p>
+    </header>
+
+    <div class="overview">
+      <div class="ov-block">
+        <span class="ov-k">缺补方向</span>
+        <span class="ov-v" id="ovColor">青白 / 暖金</span>
+      </div>
+      <div class="ov-block">
+        <span class="ov-k">适配人设</span>
+        <span class="ov-v" id="ovVibe">温润 · 沉稳 · 低调</span>
+      </div>
+      <div class="ov-block">
+        <span class="ov-k">预算场景</span>
+        <span class="ov-v" id="ovBudget">¥1,000–3,000 · 日常通勤</span>
+      </div>
+      <div class="ov-block">
+        <span class="ov-k">状态关键词</span>
+        <span class="ov-v" id="ovId">温柔但有分寸</span>
+      </div>
+    </div>
+
+    <div class="result-grid" id="resultGrid">
+      <!-- cards injected by JS -->
+    </div>
+
+    <div class="result-cta">
+      <h3>下一步,你可以继续看</h3>
+      <div class="cta-grid">
+        <a class="cta-tile" href="#materials">
+          <span class="cta-ico">⌑</span>
+          <strong>展开材质百科</strong>
+          <em>看产区、颜色、价格影响和保养注意</em>
+        </a>
+        <a class="cta-tile" href="#pairing">
+          <span class="cta-ico">◐</span>
+          <strong>查看搭配指南</strong>
+          <em>按通勤、商务、礼赠、收藏等场景继续筛</em>
+        </a>
+        <a class="cta-tile" href="#logic">
+          <span class="cta-ico">◇</span>
+          <strong>看推荐逻辑</strong>
+          <em>了解出生信息、MBTI 和兴趣如何参与推荐</em>
+        </a>
+        <a class="cta-tile" href="#assess">
+          <span class="cta-ico">○</span>
+          <strong>重新生成一次</strong>
+          <em>换一组爱好、风格或预算，看看不同答案</em>
+        </a>
+      </div>
+      <p class="disclaimer-inline">本推荐仅供审美、文化与内部交流参考,不构成命理承诺、鉴定结论或投资建议。高价文玩手串仍建议查看正规鉴定证书。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== VISUAL REFERENCES ============== -->
+<section class="section section-sample" id="result-sample">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">小红书感参考</span>
+      <h2>图片不只展示材质，还要展示“戴上是什么感觉”</h2>
+      <p class="section-lede">参考文玩女孩、多圈叠戴、新中式手串穿搭和五行配色笔记的视觉规律，页面图片会优先表达上身效果、色彩关系、生活场景和搭配公式。</p>
+    </header>
+
+    <div class="xhs-board" aria-label="小红书风格图片参考">
+      <article class="xhs-card xhs-wrist">
+        <div class="xhs-shot">
+          <img src="./assets/songshi.jpg" alt="绿松石手串上身参考" loading="lazy" />
+          <span>手腕近景 · 单主视觉</span>
+        </div>
+        <span class="sample-pill">手腕上身感</span>
+        <h3>上手色彩，先看显眼程度</h3>
+        <p>用单张主图判断颜色在手腕上的存在感：绿松石会更清爽、更有记忆点，适合想要一点小众辨识度的人。</p>
+        <div class="sample-tags">
+          <span>文玩女孩</span><span>色彩占比</span><span>自然光</span>
+        </div>
+      </article>
+
+      <article class="xhs-card xhs-wheel">
+        <div class="element-wheel" aria-label="五行色彩轮">
+          <b>缺补色彩</b>
+          <span style="--c:#d84c3d">火 · 南红</span>
+          <span style="--c:#2f9c83">木 · 绿松</span>
+          <span style="--c:#d5a642">土 · 蜜蜡</span>
+          <span style="--c:#d9dedf">金 · 白晶</span>
+          <span style="--c:#5d4032">水 · 沉香</span>
+        </div>
+        <span class="sample-pill">色彩轮</span>
+        <h3>把命理逻辑翻译成颜色</h3>
+        <p>不直接讲玄学结论，而是把五行缺补变成可感知的色彩和材质，用户更容易理解为什么推荐这一串。</p>
+        <div class="sample-tags">
+          <span>五行配色</span><span>缺什么补什么</span><span>材质逻辑</span>
+        </div>
+      </article>
+
+      <article class="xhs-card xhs-life">
+        <div class="life-flatlay">
+          <img src="./assets/chenxiang.jpg" alt="沉香手串生活场景参考" loading="lazy" />
+          <span>茶席 · 书房 · 通勤</span>
+        </div>
+        <span class="sample-pill">生活场景</span>
+        <h3>不是摆拍，是生活方式</h3>
+        <p>沉香、紫檀这类材质更适合茶室、书房、通勤和近距离社交，图片要有慢生活和稳定感。</p>
+        <div class="sample-tags">
+          <span>茶席氛围</span><span>通勤质感</span><span>松弛感</span>
+        </div>
+      </article>
+
+      <article class="xhs-card xhs-formula">
+        <div class="formula-stack">
+          <div style="--c:#b23a2f"><span>南红</span></div>
+          <b>+</b>
+          <div style="--c:#d5a642"><span>蜜蜡</span></div>
+          <b>+</b>
+          <div style="--c:#ece8db"><span>白玉</span></div>
+        </div>
+        <span class="sample-pill">搭配公式</span>
+        <h3>红 + 黄 + 白，显白又不乱</h3>
+        <p>把“怎么搭”做成公式，比单张商品图更有参考价值；用户能直接照着搜索单品和组合。</p>
+        <div class="sample-tags">
+          <span>显白公式</span><span>新中式叠戴</span><span>照着搭</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== MATERIALS ENCYCLOPEDIA ============== -->
+<section class="section section-materials" id="materials">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">材质百科</span>
+      <h2>8 种主流文玩手串材质,看完心里有数</h2>
+      <p class="section-lede">每一类都附产区、价格影响因素、适合人群与保养注意。点击任意卡片展开详情。</p>
+    </header>
+
+    <div class="materials-grid" id="materialsGrid">
+      <!-- cards injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============== PAIRING SCENES ============== -->
+<section class="section section-pairing" id="pairing">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">搭配指南</span>
+      <h2>按场景挑,而不是按材质挑</h2>
+      <p class="section-lede">先想清楚什么场合戴、想传达什么气质,材质和品类自然会收敛到合理的范围。</p>
+    </header>
+
+    <div class="pairing-grid" id="pairingGrid">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============== INTERNAL NOTES ============== -->
+<section class="section section-services" id="notes">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">内部科普说明</span>
+      <h2>先把材质和审美讲清楚</h2>
+      <p class="section-lede">文玩的世界很大，但你不需要全懂。当前版本用于组织内部共享与学习，先把材质科普、价格参考和避坑指南讲清楚，帮大家少听玄乎话术，多看选品逻辑。</p>
+    </header>
+
+    <div class="services-grid">
+      <article class="svc-card">
+        <span class="svc-tag">阅读路径</span>
+        <h3>先测评，再看百科</h3>
+        <p>先用测评形成一个入口，再带着问题去看产区、颜色、价格影响和保养注意，效率会高很多。</p>
+        <a href="#assess" class="svc-link">去测评 →</a>
+      </article>
+      <article class="svc-card">
+        <span class="svc-tag">科普重点</span>
+        <h3>颜色、产区、品相</h3>
+        <p>同一个名字下面可能有不同颜色、不同产区和不同等级，真正拉开价格的往往是细节。</p>
+        <a href="#materials" class="svc-link">看材质百科 →</a>
+      </article>
+      <article class="svc-card">
+        <span class="svc-tag">搭配思路</span>
+        <h3>按场景，而不是按热度</h3>
+        <p>通勤、商务、礼赠、收藏对应的材质逻辑不同。先确定使用场景，比盲目追热门更稳。</p>
+        <a href="#pairing" class="svc-link">看搭配指南 →</a>
+      </article>
+    </div>
+
+    <aside class="disclaimer">
+      <strong>关于推荐的边界</strong>
+      <p>人生一串的推荐基于传统五行色彩象征、性格与审美偏好、兴趣爱好、佩戴场景以及材质常识。本页面<u>不提供</u>命理预测、医疗与投资建议,也不替代正规机构的鉴定证书。高价文玩手串请认准 NGTC、GIA 等权威鉴定;沉香、南红、翡翠等品类真伪复杂,建议以机构证书和实物判断为准。</p>
+    </aside>
+  </div>
+</section>
+
+<script src="./app.js"></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
+</html>
